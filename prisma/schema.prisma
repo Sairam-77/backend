@@ -36,3 +36,15 @@ model Movie {
   screen Int
 }
 
+model Ticket {
+    id        String @unique @default(uuid())
+    email     String 
+    name      String 
+    type      String
+    showTime  String
+    date      String
+    seats     String[]
+    screen    String
+}
+
+
